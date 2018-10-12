@@ -19,6 +19,16 @@ containers.forEach(function(element) {
     element.innerHTML= "<input type='text' placeholder='escriba su texto'></input>";
    });
 
+   var boton= document.getElementById("btn-click");
+   boton.onclick=function(evt){
+    alert("Hola mundo"); 
+   };
 
+ var  btnCopy=document.getElementById("btnCopy");
+btnCopy.onclick = function(evt)
+{
+let msj = document.getElementById('textMsj').value;
+document.getElementById('showMsj').innerText = msj;
+} 
   
 
